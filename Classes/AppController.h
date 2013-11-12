@@ -127,6 +127,12 @@ extern NSString * const kUserNotificationCallControllerIdentifierKey;
 // Preferences menu item outlet.
 @property (nonatomic, weak) IBOutlet NSMenuItem *preferencesMenuItem;
 
+
+@property (nonatomic, strong) NSStatusItem *statusBarIcon;
+@property (nonatomic, weak) IBOutlet NSMenu *statusBarMenu;
+
+
+
 // Stops and destroys SIP user agent hanging up all calls and unregistering all accounts.
 - (void)stopUserAgent;
 

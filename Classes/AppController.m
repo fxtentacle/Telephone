@@ -108,6 +108,7 @@ static void NameserversChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, 
 
 
 @implementation AppController
+@synthesize statusBarIcon;
 
 @synthesize preferencesController = _preferencesController;
 @synthesize accountSetupController = _accountSetupController;
@@ -1565,6 +1566,14 @@ static void NameserversChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, 
     [[self userAgent] setTransportPublicHost:[defaults stringForKey:kTransportPublicHost]];
     [[self userAgent] setUsesG711Only:[defaults boolForKey:kUseG711Only]];
     [self setRingtone:[NSSound soundNamed:[defaults stringForKey:kRingingSound]]];
+    
+    
+    
+    statusBarIcon = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    [statusBarIcon setTitle: NSLocalizedString(@"Tel",@"Telephone")];
+    [statusBarIcon setHighlightMode:YES];
+    [statusBarIcon setMenu: [self statusBarMenu]];
+
     
     
     NSArray *savedAccounts = [defaults arrayForKey:kAccounts];
