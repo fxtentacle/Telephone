@@ -172,7 +172,7 @@
                             <menuItem isSeparatorItem="YES" id="505"/>
                             <menuItem title="Answer" id="513">
                                 <string key="keyEquivalent" base64-UTF8="YES">
-DQ
+CQ
 </string>
                                 <connections>
                                     <action selector="acceptCall:" target="-1" id="514"/>

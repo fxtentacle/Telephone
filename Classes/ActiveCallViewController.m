@@ -71,8 +71,8 @@
     // Set hang-up button origin manually.
     NSRect hangUpButtonFrame = [[self hangUpButton] frame];
     NSRect progressIndicatorFrame = [[self callProgressIndicator] frame];
-    hangUpButtonFrame.origin.x = progressIndicatorFrame.origin.x + 1;
-    hangUpButtonFrame.origin.y = progressIndicatorFrame.origin.y + 1;
+    hangUpButtonFrame.origin.x = progressIndicatorFrame.origin.x + 1 - 9;
+    hangUpButtonFrame.origin.y = progressIndicatorFrame.origin.y + 1 - 1;
     [[self hangUpButton] setFrame:hangUpButtonFrame];
     
     // Add mouse tracking area to switch between call progress indicator and a hang-up button in the active call view.

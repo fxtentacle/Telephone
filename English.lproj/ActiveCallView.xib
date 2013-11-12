@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A3017" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment defaultVersion="1070" identifier="macosx"/>
+        <deployment defaultVersion="1080" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
     </dependencies>
     <objects>
@@ -9,7 +9,7 @@
             <connections>
                 <outlet property="callProgressIndicator" destination="57" id="58"/>
                 <outlet property="displayedNameField" destination="59" id="129"/>
-                <outlet property="hangUpButton" destination="122" id="125"/>
+                <outlet property="hangUpButton" destination="6tC-5r-Ghq" id="7S5-Pf-hgJ"/>
                 <outlet property="statusField" destination="61" id="130"/>
                 <outlet property="view" destination="41" id="124"/>
             </connections>
@@ -53,19 +53,48 @@
                 <outlet property="delegate" destination="-2" id="101"/>
             </connections>
         </customView>
-        <button toolTip="End Call" id="122" userLabel="Hang Up Button">
-            <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
+        <popUpButton id="6tC-5r-Ghq" userLabel="Hang Up Button">
+            <rect key="frame" x="0.0" y="0.0" width="27" height="17"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-            <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="NSStopProgressFreestandingTemplate" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="123">
+            <popUpButtonCell key="cell" type="bevel" bezelStyle="regularSquare" imagePosition="overlaps" alignment="left" imageScaling="proportionallyDown" inset="2" pullsDown="YES" arrowPosition="noArrow" id="qGB-Mx-qWg">
                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                 <font key="font" size="10" name="LucidaGrande"/>
-            </buttonCell>
-            <connections>
-                <action selector="hangUpCall:" target="-2" id="126"/>
-            </connections>
-        </button>
+                <menu key="menu" title="OtherViews" id="E81-43-TCa">
+                    <items>
+                        <menuItem image="NSAdvanced" hidden="YES" id="Lyz-6s-byd">
+                            <attributedString key="attributedTitle"/>
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Mute" keyEquivalent="m" id="o7d-fq-1Yr">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="toggleMicrophoneMute:" target="-1" id="xob-h4-UmQ"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Hold" keyEquivalent="h" id="lMA-iJ-gHv">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="toggleCallHold:" target="-1" id="nw4-Ok-TS6"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="Transfer" keyEquivalent="t" id="9yT-g6-GcL">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="showCallTransferSheet:" target="-1" id="kBm-gt-FB3"/>
+                            </connections>
+                        </menuItem>
+                        <menuItem title="End call" keyEquivalent="." id="dEi-bG-tqO">
+                            <attributedString key="attributedTitle"/>
+                            <connections>
+                                <action selector="hangUpCall:" target="-1" id="JEC-rQ-d4o"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+            </popUpButtonCell>
+        </popUpButton>
     </objects>
     <resources>
-        <image name="NSStopProgressFreestandingTemplate" width="12" height="12"/>
+        <image name="NSAdvanced" width="32" height="32"/>
     </resources>
 </document>
