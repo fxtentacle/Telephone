@@ -106,6 +106,8 @@
 		AAFC002A1074D0B50018C7DA /* SoundPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFC00291074D0B50018C7DA /* SoundPreferencesView.xib */; };
 		AAFC002C1074D0B50018C7DA /* GeneralPreferencesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFC002B1074D0B50018C7DA /* GeneralPreferencesView.xib */; };
 		AAFCFFBD1074BFCA0018C7DA /* AccountSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAFCFFBC1074BFCA0018C7DA /* AccountSetupController.m */; };
+		C4AF4D5E1832A033007BE40D /* MenuIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AF4D5C1832A033007BE40D /* MenuIcon.png */; };
+		C4AF4D5F1832A033007BE40D /* MenuIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4AF4D5D1832A033007BE40D /* MenuIcon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +313,8 @@
 		AAFC003B1074D19A0018C7DA /* German */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = German; path = German.lproj/NetworkPreferencesView.xib; sourceTree = "<group>"; };
 		AAFCFFBB1074BFCA0018C7DA /* AccountSetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = AccountSetupController.h; sourceTree = "<group>"; tabWidth = 4; };
 		AAFCFFBC1074BFCA0018C7DA /* AccountSetupController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = AccountSetupController.m; sourceTree = "<group>"; tabWidth = 4; };
+		C4AF4D5C1832A033007BE40D /* MenuIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MenuIcon.png; sourceTree = "<group>"; };
+		C4AF4D5D1832A033007BE40D /* MenuIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MenuIcon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +431,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C4AF4D5C1832A033007BE40D /* MenuIcon.png */,
+				C4AF4D5D1832A033007BE40D /* MenuIcon@2x.png */,
 				AA1A0A9F1828E38900278658 /* Telephone.icns */,
 				8D1107310486CEB800E47090 /* Telephone-Info.plist */,
 				AAA7CFFC1825BE1900D53FB9 /* Telephone.entitlements */,
@@ -727,6 +733,7 @@
 				AA2ED99C0F05B362004A13C6 /* Account.xib in Resources */,
 				AA2ED9A00F05B3B5004A13C6 /* Call.xib in Resources */,
 				AA2ED9AC0F05BA11004A13C6 /* AccountSetup.xib in Resources */,
+				C4AF4D5F1832A033007BE40D /* MenuIcon@2x.png in Resources */,
 				AA2ED9B20F05BB5D004A13C6 /* AuthenticationFailure.xib in Resources */,
 				AA0910CC0EC21F44004912A5 /* COPYRIGHT in Resources */,
 				AA584A6A0F06CFD2003C4992 /* Localizable.strings in Resources */,
@@ -736,6 +743,7 @@
 				AA34ACC3106E229A00FA38F7 /* ActiveAccountView.xib in Resources */,
 				AAFC002C1074D0B50018C7DA /* GeneralPreferencesView.xib in Resources */,
 				AAFC00281074D0B50018C7DA /* AccountPreferencesView.xib in Resources */,
+				C4AF4D5E1832A033007BE40D /* MenuIcon.png in Resources */,
 				AAFC002A1074D0B50018C7DA /* SoundPreferencesView.xib in Resources */,
 				AAFC00261074D0B50018C7DA /* NetworkPreferencesView.xib in Resources */,
 				AADAA2C3107E569200789F2D /* IncomingCallView.xib in Resources */,

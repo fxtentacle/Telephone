@@ -219,9 +219,34 @@ DQ
         <customObject id="450" customClass="AppController">
             <connections>
                 <outlet property="preferencesMenuItem" destination="129" id="491"/>
-                <outlet property="statusBarMenu" destination="29" id="Uol-XZ-zHx"/>
+                <outlet property="statusBarMenu" destination="xBc-fF-unN" id="MYS-qx-FxZ"/>
                 <outlet property="windowMenu" destination="24" id="515"/>
             </connections>
         </customObject>
+        <menu id="xBc-fF-unN" userLabel="Status Bar Menu">
+            <items>
+                <menuItem isSeparatorItem="YES" id="TbE-lX-mY6">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Preferences…" keyEquivalent="," id="pbG-zx-Lh1" userLabel="121">
+                    <connections>
+                        <action selector="showPreferencePanel:" target="450" id="9qX-e6-ea4"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="iPd-sh-5Ld">
+                    <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                </menuItem>
+                <menuItem title="Close Window" keyEquivalent="w" id="qhN-kW-G8y" userLabel="1">
+                    <connections>
+                        <action selector="performClose:" target="-1" id="PL2-uB-9np"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit Telephone" keyEquivalent="q" id="OgB-mr-kWL" userLabel="1111">
+                    <connections>
+                        <action selector="terminate:" target="-3" id="i5Y-1R-Dar"/>
+                    </connections>
+                </menuItem>
+            </items>
+        </menu>
     </objects>
 </document>
