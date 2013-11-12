@@ -752,16 +752,15 @@ static void NameserversChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, 
         accountNumber++;
     }
     if ([itemsArray count] > 0) {
-        [itemsArray insertObject:[NSMenuItem separatorItem] atIndex:0];
         [self setAccountsMenuItems:itemsArray];
     } else {
         [self setAccountsMenuItems:nil];
     }
     
     // Add menu items to the Window menu.
-    NSUInteger itemTag = 4;
+    NSUInteger itemTag = 0;
     for (NSMenuItem *menuItem in itemsArray) {
-        [[self windowMenu] insertItem:menuItem atIndex:itemTag];
+        [[self statusBarMenu] insertItem:menuItem atIndex:itemTag];
         itemTag++;
     }
 }
@@ -1570,7 +1569,7 @@ static void NameserversChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, 
     
     
     statusBarIcon = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [statusBarIcon setTitle: NSLocalizedString(@"Tel",@"Telephone")];
+    [statusBarIcon setImage: [NSImage imageNamed:@"MenuIcon"]];
     [statusBarIcon setHighlightMode:YES];
     [statusBarIcon setMenu: [self statusBarMenu]];
 
