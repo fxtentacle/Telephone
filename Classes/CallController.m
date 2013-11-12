@@ -156,6 +156,8 @@ static const NSTimeInterval kRedialButtonReenableTime = 1.0;
     [self setCallActive:NO];
     [self setCallUnhandled:NO];
     
+    [[self window] setLevel:NSFloatingWindowLevel];
+
     return self;
 }
 
