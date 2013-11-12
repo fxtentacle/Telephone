@@ -1664,15 +1664,6 @@ static void NameserversChanged(SCDynamicStoreRef store, CFArrayRef changedKeys, 
             
             continue;
         }
-        
-        if (i == 0) {
-            [[anAccountController window] makeKeyAndOrderFront:self];
-            
-        } else {
-            NSWindow *previousAccountWindow = [[[self accountControllers] objectAtIndex:(i - 1)] window];
-            
-            [[anAccountController window] orderWindow:NSWindowBelow relativeTo:[previousAccountWindow windowNumber]];
-        }
     }
     
     // Update callsShouldDisplayAccountInfo on account controllers.
