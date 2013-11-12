@@ -683,6 +683,7 @@
 				LastUpgradeCheck = 0500;
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
+						DevelopmentTeam = 63FEAD533D;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -1186,6 +1187,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Telephone.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1238,6 +1241,7 @@
 					"-lpj-i386-apple-darwin13.0.2",
 				);
 				PRODUCT_NAME = Telephone;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1247,6 +1251,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Telephone.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1297,6 +1303,7 @@
 					"-lpj-i386-apple-darwin13.0.2",
 				);
 				PRODUCT_NAME = Telephone;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
