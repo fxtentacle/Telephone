@@ -239,6 +239,7 @@ NSString * const kEmailSIPLabel = @"sip";
     [[self account] setDelegate:self];
     
     [[self window] setTitle:[[self account] SIPAddress]];
+    [[self window] setLevel:NSFloatingWindowLevel];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(SIPUserAgentDidFinishStarting:)
